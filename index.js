@@ -30,7 +30,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'What license will your project use?',
-        choices: ["MIT", "Apache", "Mozilla", "Genu", "None"]
+        choices: ["MIT", "Apache", "Mozilla", "GNU", "None"]
       },
       {
         type: 'input',
@@ -64,7 +64,7 @@ function writeToFile(fileName, data) {}
 // TODO: Create a function to initialize app
 function init() {
 inquirer.prompt(questions).then(data => {
-fs.writeFileSync('readmetest4.md', generateMarkdown(data), (err) =>
+fs.writeFileSync('readmetest5.md', generateMarkdown(data), (err) =>
 err ? console.log(err) : console.log('Successfully created README!'))
 })
 
