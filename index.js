@@ -64,7 +64,7 @@ function writeToFile(fileName, data) {}
 // TODO: Create a function to initialize app
 function init() {
 inquirer.prompt(questions).then(data => {
-fs.writeFileSync('readmetest5.md', generateMarkdown(data), (err) =>
+fs.writeFileSync('./dist/README.md', generateMarkdown(data), (err) =>
 err ? console.log(err) : console.log('Successfully created README!'))
 })
 

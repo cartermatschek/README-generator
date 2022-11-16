@@ -20,16 +20,16 @@ else {return ``}
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license === "MIT"){
-    return `https://choosealicense.com/licenses/mit/`
+    return `[MIT](https://choosealicense.com/licenses/mit/)`
   }
   else if (license === "Apache"){
-    return `https://choosealicense.com/licenses/apache-2.0/`
+    return `[Apache](https://choosealicense.com/licenses/apache-2.0/)`
   }
   else if (license === "Mozilla"){
-    return `https://choosealicense.com/licenses/mpl-2.0/`
+    return `[Mozilla](https://choosealicense.com/licenses/mpl-2.0/)`
   }
   else if (license === "GNU"){
-    return `https://choosealicense.com/licenses/agpl-3.0/`
+    return `[GNU](https://choosealicense.com/licenses/agpl-3.0/)`
   }
   else {return ``}
 }
